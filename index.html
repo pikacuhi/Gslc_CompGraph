@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Editor: Grayscale & Blur</h1>
+    <div class="uploader">
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+    <div class="controls">
+      <button id="grayscaleButton" disabled>Grayscale</button>
+      <button id="blurButton" disabled>Blur</button>
+      <button id="resetButton" disabled>Reset</button>
+    </div>
+    <div class="preview" id="preview" style="display: none;">
+      <div class="comparison">
+        <div class="before">
+          <h2>Before</h2>
+          <img id="originalImage" alt="Original Image">
+        </div>
+        <div class="after">
+          <h2>After</h2>
+          <canvas id="editedImage"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
